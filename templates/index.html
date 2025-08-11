@@ -362,7 +362,7 @@
             const formData = new FormData(this);
             
             try {
-                const response = await fetch('/calculate-fitscore-form', {
+                const response = await fetch('https://your-vercel-app.vercel.app/calculate-fitscore-form', {
                     method: 'POST',
                     body: formData
                 });
@@ -663,7 +663,7 @@ Nice to have:
             };
             
             try {
-                const response = await fetch('/feedback', {
+                const response = await fetch('https://your-vercel-app.vercel.app/feedback', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
